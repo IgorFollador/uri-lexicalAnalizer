@@ -63,10 +63,13 @@ class LexicalController{
                         LexicalController.removeHighlight();
                         
                         $this.wordFoundedHighlight(elementToken);
+                    } else {
+                        $('#word').removeClass('fa-check-circle-green');
+                        $('#word').addClass('fa-minus-circle');
                     }
 
                 } else if(stateError == false) {
-                    alert("Apenas caracteres válidos");
+                    alert("Just valid char");
                 }
             }
             
