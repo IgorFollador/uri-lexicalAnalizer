@@ -114,3 +114,8 @@ tr.focus-column-error{
 	color: red;
 	cursor: pointer;
 }
+
+.copyright {
+	color: white;
+    padding: 28px 0;
+}
