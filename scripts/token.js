@@ -39,9 +39,9 @@ class Token{
             }
         }
         console.log(indexTag);
-        console.log(this.instance.$tokens);
+        console.log(this.instance.$chips);
 
-        return this.instance.$tokens[indexTag];
+        return this.instance.$chips[indexTag];
     }
 
     get instance(){
