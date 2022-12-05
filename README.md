@@ -16,5 +16,5 @@ This is a dynamic compiler that registers the user's token dictionary and valida
 
 ### Software image
 
-![v1](https://github.com/IgorFollador/uri-lexicalAnalyzer/blob/main/assets/imgs/screenshots/v1.png?raw=true "First release");
+![v1](https://github.com/IgorFollador/uri-lexicalAnalyzer/blob/main/assets/imgs/screenshots/v1.png?raw=true "First release")
 
