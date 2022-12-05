@@ -61,6 +61,11 @@ nav {
 	color: white!important;
 }
 
+.word-not-founded{
+	background-color: red!important;
+	color: white!important;
+}
+
 th{
 	text-align: center!important;
 }
@@ -107,7 +112,7 @@ tr.focus-column-error{
 	color: rgb(30, 5, 175);
 }
 .fa-check-circle-green {
-	color: rgb(0, 201, 0);
+	color: #ffffff;
 }	
 
 .fas.fa-trash:hover {
