@@ -1,0 +1,109 @@
+:root {
+	color-scheme: light dark;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	p {
+	  color: #fff;
+	}
+}
+
+p {
+	color: rgb(0, 0, 0);
+	@media screen and (prefers-color-scheme: dark) {
+		color: #fff;
+	}
+}
+
+.margin-left-default{
+    margin-left: 20px;
+}
+.margin-top-default{
+    margin-top: 25px!important;
+}
+
+.padding-default{
+    padding: 20px;
+}
+
+.navbar{
+	height: 100px;
+}
+
+nav {
+    background-color: #0032bb!important;
+}
+
+.nav-header{
+	display: flex;
+	height: 100%;
+	text-align: center;
+}
+
+.nav-wrapper {
+	display: block;
+	width: 100%;
+}
+
+.nav-content {
+	width: 100%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.word-founded{
+	background-color: #0032bb!important;
+	color: white!important;
+}
+
+th{
+	text-align: center!important;
+}
+
+.tokens{
+	display: flex;
+}
+
+.card{
+	height: 100%;
+	background-color: #2e2e2e!important;
+	color: #fff;
+}
+
+.input{
+	color: #fff!important;
+}
+
+.focus-line td,
+.focus-column{
+	background: rgba(76, 130, 175, 0.1);
+}
+.focus-line td.focus-column{
+	color: #e7edee;
+	background: #325cce;
+}
+.focus-line td,
+.focus-column{
+	background: rgba(76, 130, 175, 0.1);
+}
+td.focus-column-error{
+	color: #e7edee;
+	background-color: rgba(236, 136, 125, 0.7)!important;
+}
+tr.focus-column-error{
+	color: #e7edee;
+	background-color: rgba(236, 136, 125, 0.7)!important;
+}
+
+.fa-minus-circle {
+	color: red;
+}	
+.fa-check-circle {
+	color: rgb(30, 5, 175);
+}	
+
+.fas.fa-trash:hover {
+	color: red;
+	cursor: pointer;
+}
