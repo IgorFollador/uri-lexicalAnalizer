@@ -31,7 +31,11 @@ p {
 }
 
 nav {
-    background-color: #0032bb!important;
+    background-color: #374c85!important;
+}
+
+.btn{
+	background-color: #244dbb8a!important;;
 }
 
 .nav-header{
@@ -101,6 +105,9 @@ tr.focus-column-error{
 }	
 .fa-check-circle {
 	color: rgb(30, 5, 175);
+}
+.fa-check-circle-green {
+	color: rgb(0, 201, 0);
 }	
 
 .fas.fa-trash:hover {

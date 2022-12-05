@@ -5,14 +5,14 @@ class LexicalController{
     states = [[]];
 
     constructor(){
-        this.tokenController = undefined;
+        this.token = undefined;
         this.tableData = [];
         this.states = [[]];
     }
 
     init(){
-        this.tokenController = new TokenController();
-        this.tokenController.init();
+        this.token = new Token();
+        this.token.init();
         this.startValidation();
     }
 
@@ -24,7 +24,7 @@ class LexicalController{
     wordValidate($this){
         console.log($this);
 
-        let chipsListLength = $this.tokenController.tokens.length;
+        let chipsListLength = $this.token.tokens.length;
         if(chipsListLength > 0) {
             console.log('up');
 
@@ -54,7 +54,7 @@ class LexicalController{
                         stateError = true;
                     }
                 } else if(word[i] == ' ' || word[i] == '/n'){
-                    let elementToken = $this.tokenController.getElementChipByTag(word.replace(/^\s+|\s+$/g, ''));
+                    let elementToken = $this.token.getElementChipByTag(word.replace(/^\s+|\s+$/g, ''));
                     
                     if(elementToken != undefined){
                         let input = document.getElementById('word');
@@ -133,7 +133,7 @@ class LexicalController{
     }
 
     mountWordState(){
-        const tokens = this.tokenController.tokens;
+        const tokens = this.token.tokens;
         
         for(let i=0; i<tokens.length; i++) {
             let currentState = 0;
@@ -228,14 +228,18 @@ class LexicalController{
         if(stateError == '-'){
             tableLine.forEach((line) => {line.classList.add('focus-column-error')});
             tableColumn.forEach((column) => {column.classList.add('focus-column-error')});
+            $('#word').removeClass('fa-check-circle-green');
+            $('#word').addClass('fa-minus-circle');
         }else{
             tableLine.forEach((line) => {line.classList.add('focus-line')});
             tableColumn.forEach((column) => {column.classList.add('focus-column')});
+            $('#word').removeClass('fa-minus-circle');
+            $('#word').addClass('fa-check-circle-green')
         }
     }
     
     clear(){
-        this.tokenController.clear();
+        this.token.clear();
         this.cleanInputWord();
         this.cleanTable();
         this.updateNameButtom('Fill table');

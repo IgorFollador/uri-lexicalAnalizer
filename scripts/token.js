@@ -1,4 +1,4 @@
-class TokenController{
+class Token{
     
     constructor(){};
 
